@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PedraPapelTesoura</string>
+    <string name="mostrar_op_es">Mostrar Opções</string>
+    <string name="selecione">Selecione uma opção:</string>
+    <string name="dupla">Você X Computador</string>
+    <string name="trio">Você X 2 Computadores</string>
+    <string name="selecione_jogada">Selecione sua jogada:</string>
+    <string name="pedra">Pedra</string>
+    <string name="papel">Papel</string>
+    <string name="tesoura">Tesoura</string>
+    <string name="resultado">Resultado:</string>
+    <string name="jogada_do_computador_1">Jogada do Computador 1</string>
+    <string name="jogada_do_computador_2">Jogada do Computador 2</string>
+</resources>

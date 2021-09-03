@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/stmMostraOpcoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mostrar_op_es"
+        android:checked="true"/>
+
+    <LinearLayout
+        android:id="@+id/llOpcoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selecione" />
+
+        <RadioGroup
+            android:id="@+id/opcaoRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/duplaRb"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="@string/dupla"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/trioRb"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="@string/trio"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selecione_jogada" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnPedra"
+            android:src="@mipmap/pedra"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="@string/pedra"/>
+
+        <ImageButton
+            android:id="@+id/btnPapel"
+            android:src="@mipmap/papel"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="@string/papel" />
+
+        <ImageButton
+            android:id="@+id/btnTesoura"
+            android:src="@mipmap/tesoura"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="@string/tesoura" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado" />
+
+    <TextView
+        android:id="@+id/tvJogadaComputador1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jogada_do_computador_1"/>
+
+    <ImageView
+        android:id="@+id/ivJogadaComputador1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"  />
+
+    <TextView
+        android:id="@+id/tvJogadaComputador2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/jogada_do_computador_2"/>
+
+    <ImageView
+        android:id="@+id/ivJogadaComputador2"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="64dp"  />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
