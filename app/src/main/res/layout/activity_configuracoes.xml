@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ConfiguracoesActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/configuracoes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/stmMostraOpcoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mostrar_op_es"
+        android:checked="true"/>
+
+    <LinearLayout
+        android:id="@+id/llOpcoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selecione" />
+
+        <RadioGroup
+            android:id="@+id/opcaoRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/duplaRb"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="@string/dupla"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/trioRb"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="@string/trio"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRodadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selecione_rodadas" />
+
+        <RadioGroup
+            android:id="@+id/opcoesRodadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/opcao1rodada"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="@string/UmaRodada"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/opcao3rodadas"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="@string/TresRodadas"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/opcao5rodadas"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="@string/CincoRodadas"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/salvarBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar"
+        />
+
+    <Button
+        android:id="@+id/cancelarBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelar"
+        />
+
+</LinearLayout>

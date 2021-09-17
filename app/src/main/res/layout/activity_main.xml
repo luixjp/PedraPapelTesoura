@@ -4,50 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/stmMostraOpcoes"
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/mostrar_op_es"
-        android:checked="true"/>
-
-    <LinearLayout
-        android:id="@+id/llOpcoes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="visible">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/selecione" />
-
-        <RadioGroup
-            android:id="@+id/opcaoRg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/duplaRb"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:text="@string/dupla"
-                android:checked="true"
-                android:layout_height="wrap_content" />
-
-            <RadioButton
-                android:id="@+id/trioRb"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:text="@string/trio"
-                android:layout_height="wrap_content" />
-
-        </RadioGroup>
-    </LinearLayout>
+        android:text="@string/jogo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -92,8 +60,15 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/tvQuantidadeRodadas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/qtdRodadas" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:text="@string/resultado" />
 
     <TextView
@@ -124,5 +99,6 @@
         android:id="@+id/tvResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
 
 </LinearLayout>

@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">PedraPapelTesoura</string>
     <string name="mostrar_op_es">Mostrar Opções</string>
-    <string name="selecione">Selecione uma opção:</string>
+    <string name="selecione">Selecione uma opção de jogadores:</string>
+    <string name="selecione_rodadas">Selecione uma opção de rodadas:</string>
     <string name="dupla">Você X Computador</string>
     <string name="trio">Você X 2 Computadores</string>
     <string name="selecione_jogada">Selecione sua jogada:</string>
@@ -11,4 +12,12 @@
     <string name="resultado">Resultado:</string>
     <string name="jogada_do_computador_1">Jogada do Computador 1</string>
     <string name="jogada_do_computador_2">Jogada do Computador 2</string>
+    <string name="configuracoes">Configurações:</string>
+    <string name="UmaRodada">1 Rodada</string>
+    <string name="TresRodadas">3 Rodadas</string>
+    <string name="CincoRodadas">5 Rodadas</string>
+    <string name="qtdRodadas">"Quantidade de Rodadas: "</string>
+    <string name="jogo">Vamos Jogar!!!</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
 </resources>
